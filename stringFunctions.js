@@ -1,5 +1,9 @@
-function reverseString(str){
-    return str.split("").reverse().join("")
+function reverseString(str) {
+    if (typeof str!=='string') {
+        throw new TypeError('Expected a string');
+    }
+
+    return str.split('').reverse().join('');
 }
 
 function isPalindrome(str){
